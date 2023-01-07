@@ -22,7 +22,7 @@ def getPassword():
 
 
 def getToken():
-    return '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'
+    return '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'
 
 
 def getURL():
