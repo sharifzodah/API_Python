@@ -1,9 +1,9 @@
 import json
 import requests
-from utils.addPayload import *
-from utils.deletePayload import *
-from utils.configurations import *
-from utils.resources import *
+from BackEndAutomation.utils.addPayload import *
+from BackEndAutomation.utils.deletePayload import *
+from BackEndAutomation.utils.configurations import *
+from BackEndAutomation.utils.resources import *
 
 # Adding book
 addBook_URL = getURL() + ApiResources.addBook

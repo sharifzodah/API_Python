@@ -1,5 +1,5 @@
 import mysql.connector
-from utils.configurations import *
+from BackEndAutomation.utils.configurations import *
 
 conn = establish_DB_Connection()
 # print(conn.is_connected())
