@@ -10,11 +10,14 @@ addBook_URL = getURL() + ApiResources.addBook
 headers = {"Content-Type": "application/json"}
 
 add_book_request = requests.post(addBook_URL,
-                                 json=addBookPayload("Abduhamid"),
+                                 json=addBookPayload("isb2250", "879", "Abduhamid"),
                                  headers=headers, )
 
 addBook_response = add_book_request.json()
 print(addBook_response)
+print(type(addBook_response))
+print(add_book_request.text)
+print(type(add_book_request.text))
 
 assert add_book_request.status_code == 200
 assert add_book_request.headers['Content-Type'] == 'application/json;charset=UTF-8'
@@ -47,5 +50,6 @@ delete_book_request = requests.post(deleteBook_URL,
                                     headers=headers,)
 deleteBook_response = delete_book_request.json()
 print(deleteBook_response)
+print(type(deleteBook_response))
 assert delete_book_request.status_code == 200
 assert deleteBook_response['msg'] == "book is successfully deleted"
