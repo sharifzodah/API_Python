@@ -5,7 +5,7 @@ from mysql.connector import Error
 
 def getConfig():
     config = configparser.ConfigParser()
-    config.read('D:\\QA COURSE\\API_Testing_Python\\BackEndAutomation\\utils\\properties.ini')
+    config.read('D:\\QA COURSE\\API_Testing_Python\\BackEndAutomation\\utils\\properties1.ini')
     return config
 
 
